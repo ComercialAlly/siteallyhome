@@ -80,7 +80,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <ScrollReveal animation="fade-up" delay={400}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={() => onNavigate('portfolio')}
+                onClick={() => window.open('https://allymidia.webflow.io/portfolio2', '_self')}
                 className="group bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-500 hover:text-white transition-all hover:scale-105 shadow-xl inline-flex items-center justify-center gap-2"
               >
                 Ver Portfólio
@@ -145,7 +145,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </p>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-4 gap-12 max-w-6xl mx-auto mb-16">
+          <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-16">
             <ScrollReveal delay={100}>
               <div className="text-center">
                 <div className="text-5xl md:text-6xl font-bold text-orange-500 mb-2">
@@ -165,15 +165,6 @@ export default function Home({ onNavigate }: HomeProps) {
             </ScrollReveal>
 
             <ScrollReveal delay={300}>
-              <div className="text-center">
-                <div className="text-5xl md:text-6xl font-bold text-orange-500 mb-2">
-                  +<Counter end={1000} suffix="K" />
-                </div>
-                <p className="text-gray-400 text-lg">Vídeos produzidos</p>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={400}>
               <div className="text-center">
                 <div className="text-5xl md:text-6xl font-bold text-orange-500 mb-2">
                   +<Counter end={400} suffix="K" />

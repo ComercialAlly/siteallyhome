@@ -67,10 +67,8 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
               Home
             </button>
             <button
-              onClick={() => onNavigate('portfolio')}
-              className={`text-sm font-medium transition-colors ${
-                currentPage === 'portfolio' ? 'text-orange-500' : 'text-white hover:text-orange-500'
-              }`}
+              onClick={() => window.open('https://allymidia.webflow.io/portfolio2', '_self')}
+              className="text-sm font-medium text-white hover:text-orange-500 transition-colors"
             >
               Portfólio
             </button>
@@ -112,12 +110,10 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
             </button>
             <button
               onClick={() => {
-                onNavigate('portfolio');
+                window.open('https://allymidia.webflow.io/portfolio2', '_self');
                 setIsMobileMenuOpen(false);
               }}
-              className={`block w-full text-left text-sm font-medium ${
-                currentPage === 'portfolio' ? 'text-orange-500' : 'text-white'
-              }`}
+              className="block w-full text-left text-sm font-medium text-white"
             >
               Portfólio
             </button>

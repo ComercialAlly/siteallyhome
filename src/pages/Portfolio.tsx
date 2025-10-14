@@ -137,7 +137,6 @@ export default function Portfolio({ onNavigate }: PortfolioProps) {
                   className="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer"
                   onMouseEnter={() => setHoveredProject(project.id)}
                   onMouseLeave={() => setHoveredProject(null)}
-                  onClick={handlePortfolioClick}
                 >
                   <img
                     src={project.image}
